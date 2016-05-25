@@ -1,0 +1,8 @@
+[
+  {"id": 123, "label": "root - 123", "parentId": -1},
+  {"id": 124, "label": "root2 - 124", "parentId": -1},
+  {"id": 125, "label": "root3 - 125", "parentId": -1},
+  {"id": 1234, "label": "child - 1234", "parentId": 123},
+  {"id": 1277, "label": "child - 1277", "parentId": 124},
+  {"id": 12345, "label": "numbers only - 12345", "parentId": 1234, "type": "number"}
+]

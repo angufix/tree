@@ -1,0 +1,18 @@
+<script type="text/ng-template" id="mytree.html">
+    <div class="glyphicon " ng-class="nodeIconClass(node)" ng-click="toggleChildren(node);"></div>
+    <input ng-model="node.label" ng-if="node.isedited" type="{{nodeType(node)}}"
+           ng-keypress="onKeyPressed($event, node);" ng-blur="closeEditbox(node);" setfocus>
+    <span ng-if="!node.isedited" ng-dblclick="openEditbox(node);">{{node.label}}</span>
+    <ul ng-show="node.showchildren">
+      <li class="file" ng-repeat="node in node.children" ng-include="'mytree.html'"></li>
+    </ul>
+</script>
+
+<ul class="tree">
+    <li ng-repeat="node in data" ng-include="'mytree.html'">
+    </li>
+</ul>
+<!--
+<div ng-repeat="item in treeData">
+    {{item.label}}
+</div> -->

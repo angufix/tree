@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tree</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css"></script>
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap-theme.css"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./lib/angular/angular.js"></script>
+    <script src="./app/app.js"></script>
+    <script src="./app/tree-sve.js"></script>
+    <script src="./app/manipulator.js"></script>
+    <script src="./app/tree.js"></script>
+    <script>
+    </script>
+
+</head>
+<body ng-app="treeApp">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-1">
+                <h1> Test the tree </h1>
+                <div ng-controller="ManipulatorCtl" style="margin-top:40px;"">
+                    <tree data="treeData"></tree>
+
+                    <div  class="panel  panel-default" style="margin-top:40px;">
+                        <div class="panel-heading">Rename Node</div>
+                        <div class="panel-body">
+                            <input ng-model="newName" placeholder="type new name">
+                            <input ng-model="nodeId" type="number" step="1" placeholder="id of the node">
+                            <a ng-click="setNewName();" class="btn btn-primary"> set new name</a>
+                        </div>
+                    </div>
+
+                    <!-- TBC --->
+                    <!-- <div  class="panel  panel-default" style="margin-top:40px;">
+                        <div class="panel-heading">Chnage Parent</div>
+                        <div class="panel-body">
+                            <input ng-model="nodeId" type="number" step="1" placeholder="id of the node">
+                            <input ng-model="newParentId" placeholder="type parent id">
+                            <a ng-click="changeParent();" class="btn btn-primary"> set new name</a>
+                        </div>
+                    </div> -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

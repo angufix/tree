@@ -1,0 +1,24 @@
+.tree ul
+{
+    -webkit-padding-start: 15px;
+}
+.tree li
+{
+    list-style-type:none;
+}
+.tree .pointer
+{
+    cursor:pointer;
+}
+
+.tree .glyphicon-folder-close, .tree .glyphicon-folder-open
+{
+    color: #DBAF00;
+    margin-right:5px;
+}
+
+.tree .glyphicon-file
+{
+    color: #aaaaaa;
+    margin-right:5px;
+}
